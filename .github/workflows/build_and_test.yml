@@ -1,4 +1,4 @@
-name: Build iOS
+name: Build & Test iOS
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: macos-13
 
     steps:
@@ -36,3 +36,11 @@ jobs:
             -scheme TransferModule \
             -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
             clean build
+
+      - name: Run tests
+        run: |
+          xcodebuild \
+            -workspace BankApp.xcworkspace \
+            -scheme TransferModule \
+            -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
+            test
