@@ -25,10 +25,11 @@ jobs:
 
       - name: Install dependencies via CocoaPods
         run: pod install
-        working-directory: ./ # ajuste se necessário
+        working-directory: ./BankApp
 
       - name: List schemes in workspace
         run: xcodebuild -workspace BankApp.xcworkspace -list
+        working-directory: ./BankApp
 
       - name: Build project
         run: |
@@ -37,6 +38,7 @@ jobs:
             -scheme TransferModule \
             -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
             clean build
+        working-directory: ./BankApp
 
       - name: Run tests
         run: |
@@ -45,3 +47,4 @@ jobs:
             -scheme TransferModule \
             -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
             test
+        working-directory: ./BankApp
