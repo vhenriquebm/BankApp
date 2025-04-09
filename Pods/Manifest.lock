@@ -1,0 +1,21 @@
+PODS:
+  - TransferModule (0.1.0)
+
+DEPENDENCIES:
+  - TransferModule (from `https://github.com/vhenriquebm/TransferModule.git`)
+
+EXTERNAL SOURCES:
+  TransferModule:
+    :git: https://github.com/vhenriquebm/TransferModule.git
+
+CHECKOUT OPTIONS:
+  TransferModule:
+    :commit: a27504bd1bc63e15c0d6179b7e03be112376806d
+    :git: https://github.com/vhenriquebm/TransferModule.git
+
+SPEC CHECKSUMS:
+  TransferModule: 920f7077901ac06462e676aff75e6e369fcdb3c7
+
+PODFILE CHECKSUM: 33d3ed702a73ffc446257de35e463b9335ba4e02
+
+COCOAPODS: 1.15.2

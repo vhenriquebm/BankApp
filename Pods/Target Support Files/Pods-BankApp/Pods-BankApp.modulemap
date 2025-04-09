@@ -1,0 +1,6 @@
+module Pods_BankApp {
+  umbrella header "Pods-BankApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

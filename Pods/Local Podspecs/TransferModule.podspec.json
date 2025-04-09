@@ -1,0 +1,36 @@
+{
+  "name": "TransferModule",
+  "version": "0.1.0",
+  "summary": "Tela SwiftUI para transferência de dinheiro.",
+  "description": "Este módulo fornece uma tela SwiftUI reutilizável para a funcionalidade de transferência de dinheiro em aplicativos iOS.\nEle inclui campos de entrada para o nome do destinatário, número da conta e o valor a ser transferido.\nA tela também possui um botão de ação para iniciar a transferência e feedback visual durante o processo.\nEste módulo visa simplificar a implementação da funcionalidade de transferência, promovendo a consistência da interface do usuário em diferentes partes do aplicativo.\nRequer SwiftUI e é compatível com iOS 13.0 ou superior, que é a versão mínima para utilizar o framework SwiftUI.",
+  "homepage": "https://github.com/vhenriquebm/TransferModule",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "vhenriquebm": "vhenriquebm@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/vhenriquebm/TransferModule.git",
+    "tag": "0.1.0"
+  },
+  "swift_versions": [
+    "5.0",
+    "5.1",
+    "5.2",
+    "5.3",
+    "5.4",
+    "5.5",
+    "5.6",
+    "5.7",
+    "5.8",
+    "5.9",
+    "5"
+  ],
+  "platforms": {
+    "ios": "15.6"
+  },
+  "source_files": "TransferModule/Classes/**/*",
+  "swift_version": "5.9"
+}
