@@ -18,12 +18,29 @@
 			remoteGlobalIDString = 42542B9D2DA5D7F9002D7664;
 			remoteInfo = BankApp;
 		};
+		42C578142DA6FF2700339D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42542B962DA5D7F9002D7664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42C578032DA6FF2500339D92;
+			remoteInfo = GalaxyBank;
+		};
+		42C5781E2DA6FF2800339D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42542B962DA5D7F9002D7664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42C578032DA6FF2500339D92;
+			remoteInfo = GalaxyBank;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		208D5780DBABBE949A009625 /* libPods-BankApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BankApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42542B9E2DA5D7F9002D7664 /* BankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C577992DA6F71900339D92 /* BankAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42C578042DA6FF2500339D92 /* GalaxyBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalaxyBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42C578132DA6FF2700339D92 /* GalaxyBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GalaxyBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42C5781D2DA6FF2700339D92 /* GalaxyBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GalaxyBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		502C5C1E6A7A9AA2E227DBA8 /* Pods-BankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.debug.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F508CE6D955BF96E6BBA526F /* Pods-BankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.release.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -31,16 +48,27 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		42542BA02DA5D7F9002D7664 /* BankApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = BankApp;
 			sourceTree = "<group>";
 		};
 		42C5779A2DA6F71900339D92 /* BankAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = BankAppTests;
+			sourceTree = "<group>";
+		};
+		42C578052DA6FF2500339D92 /* GalaxyBank */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GalaxyBank;
+			sourceTree = "<group>";
+		};
+		42C578162DA6FF2700339D92 /* GalaxyBankTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GalaxyBankTests;
+			sourceTree = "<group>";
+		};
+		42C578202DA6FF2800339D92 /* GalaxyBankUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GalaxyBankUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -61,6 +89,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42C578012DA6FF2500339D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C578102DA6FF2700339D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C5781A2DA6FF2700339D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -69,6 +118,9 @@
 			children = (
 				42542BA02DA5D7F9002D7664 /* BankApp */,
 				42C5779A2DA6F71900339D92 /* BankAppTests */,
+				42C578052DA6FF2500339D92 /* GalaxyBank */,
+				42C578162DA6FF2700339D92 /* GalaxyBankTests */,
+				42C578202DA6FF2800339D92 /* GalaxyBankUITests */,
 				42542B9F2DA5D7F9002D7664 /* Products */,
 				C7464B1643A10988883E011A /* Pods */,
 				BF6F2AB0F221CB9CF439602A /* Frameworks */,
@@ -80,6 +132,9 @@
 			children = (
 				42542B9E2DA5D7F9002D7664 /* BankApp.app */,
 				42C577992DA6F71900339D92 /* BankAppTests.xctest */,
+				42C578042DA6FF2500339D92 /* GalaxyBank.app */,
+				42C578132DA6FF2700339D92 /* GalaxyBankTests.xctest */,
+				42C5781D2DA6FF2700339D92 /* GalaxyBankUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +201,74 @@
 			productReference = 42C577992DA6F71900339D92 /* BankAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		42C578032DA6FF2500339D92 /* GalaxyBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42C578252DA6FF2800339D92 /* Build configuration list for PBXNativeTarget "GalaxyBank" */;
+			buildPhases = (
+				42C578002DA6FF2500339D92 /* Sources */,
+				42C578012DA6FF2500339D92 /* Frameworks */,
+				42C578022DA6FF2500339D92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				42C578052DA6FF2500339D92 /* GalaxyBank */,
+			);
+			name = GalaxyBank;
+			packageProductDependencies = (
+			);
+			productName = GalaxyBank;
+			productReference = 42C578042DA6FF2500339D92 /* GalaxyBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42C578122DA6FF2700339D92 /* GalaxyBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42C578282DA6FF2800339D92 /* Build configuration list for PBXNativeTarget "GalaxyBankTests" */;
+			buildPhases = (
+				42C5780F2DA6FF2700339D92 /* Sources */,
+				42C578102DA6FF2700339D92 /* Frameworks */,
+				42C578112DA6FF2700339D92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42C578152DA6FF2700339D92 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				42C578162DA6FF2700339D92 /* GalaxyBankTests */,
+			);
+			name = GalaxyBankTests;
+			packageProductDependencies = (
+			);
+			productName = GalaxyBankTests;
+			productReference = 42C578132DA6FF2700339D92 /* GalaxyBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		42C5781C2DA6FF2700339D92 /* GalaxyBankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42C5782B2DA6FF2800339D92 /* Build configuration list for PBXNativeTarget "GalaxyBankUITests" */;
+			buildPhases = (
+				42C578192DA6FF2700339D92 /* Sources */,
+				42C5781A2DA6FF2700339D92 /* Frameworks */,
+				42C5781B2DA6FF2700339D92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42C5781F2DA6FF2800339D92 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				42C578202DA6FF2800339D92 /* GalaxyBankUITests */,
+			);
+			name = GalaxyBankUITests;
+			packageProductDependencies = (
+			);
+			productName = GalaxyBankUITests;
+			productReference = 42C5781D2DA6FF2700339D92 /* GalaxyBankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,6 +285,17 @@
 					42C577982DA6F71900339D92 = {
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = 42542B9D2DA5D7F9002D7664;
+					};
+					42C578032DA6FF2500339D92 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					42C578122DA6FF2700339D92 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 42C578032DA6FF2500339D92;
+					};
+					42C5781C2DA6FF2700339D92 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 42C578032DA6FF2500339D92;
 					};
 				};
 			};
@@ -181,6 +315,9 @@
 			targets = (
 				42542B9D2DA5D7F9002D7664 /* BankApp */,
 				42C577982DA6F71900339D92 /* BankAppTests */,
+				42C578032DA6FF2500339D92 /* GalaxyBank */,
+				42C578122DA6FF2700339D92 /* GalaxyBankTests */,
+				42C5781C2DA6FF2700339D92 /* GalaxyBankUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +331,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		42C577972DA6F71900339D92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C578022DA6FF2500339D92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C578112DA6FF2700339D92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C5781B2DA6FF2700339D92 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -242,6 +400,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42C578002DA6FF2500339D92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C5780F2DA6FF2700339D92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C578192DA6FF2700339D92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -249,6 +428,16 @@
 			isa = PBXTargetDependency;
 			target = 42542B9D2DA5D7F9002D7664 /* BankApp */;
 			targetProxy = 42C5779D2DA6F71900339D92 /* PBXContainerItemProxy */;
+		};
+		42C578152DA6FF2700339D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42C578032DA6FF2500339D92 /* GalaxyBank */;
+			targetProxy = 42C578142DA6FF2700339D92 /* PBXContainerItemProxy */;
+		};
+		42C5781F2DA6FF2800339D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42C578032DA6FF2500339D92 /* GalaxyBank */;
+			targetProxy = 42C5781E2DA6FF2800339D92 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -472,6 +661,140 @@
 			};
 			name = Release;
 		};
+		42C578262DA6FF2800339D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GalaxyBank/Preview Content\"";
+				DEVELOPMENT_TEAM = CTDN3273R3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vhenriquebm.GalaxyMovies.GalaxyBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42C578272DA6FF2800339D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GalaxyBank/Preview Content\"";
+				DEVELOPMENT_TEAM = CTDN3273R3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vhenriquebm.GalaxyMovies.GalaxyBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		42C578292DA6FF2800339D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CTDN3273R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vhenriquebm.GalaxyMovies.GalaxyBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GalaxyBank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GalaxyBank";
+			};
+			name = Debug;
+		};
+		42C5782A2DA6FF2800339D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CTDN3273R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vhenriquebm.GalaxyMovies.GalaxyBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GalaxyBank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GalaxyBank";
+			};
+			name = Release;
+		};
+		42C5782C2DA6FF2800339D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CTDN3273R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vhenriquebm.GalaxyMovies.GalaxyBankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GalaxyBank;
+			};
+			name = Debug;
+		};
+		42C5782D2DA6FF2800339D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CTDN3273R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vhenriquebm.GalaxyMovies.GalaxyBankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GalaxyBank;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -498,6 +821,33 @@
 			buildConfigurations = (
 				42C5779F2DA6F71900339D92 /* Debug */,
 				42C577A02DA6F71900339D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42C578252DA6FF2800339D92 /* Build configuration list for PBXNativeTarget "GalaxyBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42C578262DA6FF2800339D92 /* Debug */,
+				42C578272DA6FF2800339D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42C578282DA6FF2800339D92 /* Build configuration list for PBXNativeTarget "GalaxyBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42C578292DA6FF2800339D92 /* Debug */,
+				42C5782A2DA6FF2800339D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42C5782B2DA6FF2800339D92 /* Build configuration list for PBXNativeTarget "GalaxyBankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42C5782C2DA6FF2800339D92 /* Debug */,
+				42C5782D2DA6FF2800339D92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
