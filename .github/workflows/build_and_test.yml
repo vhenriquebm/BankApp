@@ -8,7 +8,7 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: macos-13 # ou macos-latest
+    runs-on: macos-13
 
     steps:
       - name: Checkout repository
@@ -21,10 +21,14 @@ jobs:
         run: sudo xcode-select -s /Applications/Xcode_15.2.app
 
       - name: Install CocoaPods
-        run: |
-          sudo gem install cocoapods
-          pod install
-        working-directory: ./ # ajuste se o Podfile estiver em outra pasta
+        run: sudo gem install cocoapods
+
+      - name: Install dependencies via CocoaPods
+        run: pod install
+        working-directory: ./ # ajuste se necessário
+
+      - name: List schemes in workspace
+        run: xcodebuild -workspace BankApp.xcworkspace -list
 
       - name: Build project
         run: |
