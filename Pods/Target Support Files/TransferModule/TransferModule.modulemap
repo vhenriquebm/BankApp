@@ -1,6 +1,0 @@
-module TransferModule {
-  umbrella header "TransferModule-umbrella.h"
-
-  export *
-  module * { export * }
-}
