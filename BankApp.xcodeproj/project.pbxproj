@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		78D12567F82A4339B978D999 /* libPods-BankApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA97D33019F2B944CC2538B7 /* libPods-BankApp.a */; };
+		8D58454211CC5D183C7C6EE4 /* libPods-BankApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 208D5780DBABBE949A009625 /* libPods-BankApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,21 +21,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		208D5780DBABBE949A009625 /* libPods-BankApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BankApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42542B9E2DA5D7F9002D7664 /* BankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C577992DA6F71900339D92 /* BankAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA97D33019F2B944CC2538B7 /* libPods-BankApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BankApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D500BC93E3640EF19810F12B /* Pods-BankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.release.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.release.xcconfig"; sourceTree = "<group>"; };
-		E1CCB2417665BD41A4AF6371 /* Pods-BankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.debug.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.debug.xcconfig"; sourceTree = "<group>"; };
+		502C5C1E6A7A9AA2E227DBA8 /* Pods-BankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.debug.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F508CE6D955BF96E6BBA526F /* Pods-BankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.release.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		42542BA02DA5D7F9002D7664 /* BankApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = BankApp;
 			sourceTree = "<group>";
 		};
 		42C5779A2DA6F71900339D92 /* BankAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = BankAppTests;
 			sourceTree = "<group>";
 		};
@@ -46,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78D12567F82A4339B978D999 /* libPods-BankApp.a in Frameworks */,
+				8D58454211CC5D183C7C6EE4 /* libPods-BankApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +71,7 @@
 				42C5779A2DA6F71900339D92 /* BankAppTests */,
 				42542B9F2DA5D7F9002D7664 /* Products */,
 				C7464B1643A10988883E011A /* Pods */,
-				CC781E3631098F8B379B7407 /* Frameworks */,
+				BF6F2AB0F221CB9CF439602A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,21 +84,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BF6F2AB0F221CB9CF439602A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				208D5780DBABBE949A009625 /* libPods-BankApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C7464B1643A10988883E011A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E1CCB2417665BD41A4AF6371 /* Pods-BankApp.debug.xcconfig */,
-				D500BC93E3640EF19810F12B /* Pods-BankApp.release.xcconfig */,
+				502C5C1E6A7A9AA2E227DBA8 /* Pods-BankApp.debug.xcconfig */,
+				F508CE6D955BF96E6BBA526F /* Pods-BankApp.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		CC781E3631098F8B379B7407 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BA97D33019F2B944CC2538B7 /* libPods-BankApp.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,7 +108,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42542BA92DA5D7FB002D7664 /* Build configuration list for PBXNativeTarget "BankApp" */;
 			buildPhases = (
-				EA3CA206F69A64B76652DFD3 /* [CP] Check Pods Manifest.lock */,
+				C3F4C86AF42A6E6DABE195A0 /* [CP] Check Pods Manifest.lock */,
 				42542B9A2DA5D7F9002D7664 /* Sources */,
 				42542B9B2DA5D7F9002D7664 /* Frameworks */,
 				42542B9C2DA5D7F9002D7664 /* Resources */,
@@ -138,8 +142,6 @@
 				42C5779A2DA6F71900339D92 /* BankAppTests */,
 			);
 			name = BankAppTests;
-			packageProductDependencies = (
-			);
 			productName = BankAppTests;
 			productReference = 42C577992DA6F71900339D92 /* BankAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -201,7 +203,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		EA3CA206F69A64B76652DFD3 /* [CP] Check Pods Manifest.lock */ = {
+		C3F4C86AF42A6E6DABE195A0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -374,7 +376,7 @@
 		};
 		42542BAA2DA5D7FB002D7664 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1CCB2417665BD41A4AF6371 /* Pods-BankApp.debug.xcconfig */;
+			baseConfigurationReference = 502C5C1E6A7A9AA2E227DBA8 /* Pods-BankApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -404,7 +406,7 @@
 		};
 		42542BAB2DA5D7FB002D7664 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D500BC93E3640EF19810F12B /* Pods-BankApp.release.xcconfig */;
+			baseConfigurationReference = F508CE6D955BF96E6BBA526F /* Pods-BankApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

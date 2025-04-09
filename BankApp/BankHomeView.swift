@@ -36,7 +36,7 @@ struct BankHomeView: View {
             .navigationTitle("Meu Banco")
             .navigationBarHidden(true)
             .sheet(isPresented: $isTransferViewPresented) {
-                TransferView()
+               // TransferView()
             }
         }
     }
