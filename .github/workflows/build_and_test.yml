@@ -1,39 +1,44 @@
-name: Multiplatform test x2
+name: Build & Test iOS
 
-on: 
+on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-  schedule:
-    - cron: 0 0 * * *
 
 jobs:
-  build-bigsur: 
-    runs-on: macos-11 
-    steps: 
-    - name: Checkout the code
-      uses: actions/checkout@v2
-    - name: Show eligible build destinations for Earendil
-      run: xcodebuild -showdestinations -scheme Earendil
-    - name: Build and test ( macOS 12.0 Monterey)
-      run: xcodebuild test -scheme Earendil -destination 'platform=macOS,arch=x86_64,id=4666018E-420F-C1B5-9525-B145CECA79EB'
-    - name: Build and test ( mac Catalyst 12.0)
-      run: xcodebuild test -scheme Earendil -destination 'platform=macOS,arch=x86_64,variant=Mac Catalyst,id=4666018E-420F-C1B5-9525-B145CECA79EB'
-    - name: Build and test ( tvOS 15.0)
-      run: xcodebuild test -scheme Earendil -destination 'platform=tvOS Simulator,OS=15.0,name=Apple TV 4K (2nd generation)'
-    - name: Build and test ( iOS 15.0)
-      run: xcodebuild test -scheme Earendil -destination 'platform=iOS Simulator,OS=15.0,name=iPhone 12 Pro'
-    - name: Build and test ( watchOS 8.0)
-      run: xcodebuild test -scheme Earendil -destination 'platform=watchOS Simulator,OS=8.0,name=Apple Watch Series 6 - 40mm'
-  build-catalina: 
-    runs-on: macos-10.15
-    steps: 
-    - name: Checkout the code
-      uses: actions/checkout@v2
-    - name: Switch to xcode 12.0.1
-      run: sudo xcode-select -s /Applications/Xcode12.0.1.app
-    - name: Show eligible build destinations for Earendil
-      run: xcodebuild -showdestinations -scheme Earendil
-    - name: Build and test ( iOS 14.0)
-      run: xcodebuild test -scheme Earendil -destination 'platform=iOS Simulator,OS=14.0,name=iPhone 11'
+  build-and-test:
+    runs-on: macos-13
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Select Xcode 15.2
+        run: sudo xcode-select -s /Applications/Xcode_15.2.app
+
+      - name: Install CocoaPods
+        run: sudo gem install cocoapods
+
+      - name: Install dependencies via CocoaPods
+        run: pod install
+
+      - name: List schemes in workspace
+        run: xcodebuild -workspace BankApp.xcworkspace -list
+
+      - name: Build project
+        run: |
+          xcodebuild build \
+            -scheme GalaxyBank \
+            -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
+            clean build
+
+      - name: Run tests
+        run: |
+          xcodebuild build \
+            -scheme GalaxyBank \
+            -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
+            test
